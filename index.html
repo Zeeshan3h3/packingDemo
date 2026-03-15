@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PackRight – Premium Packaging Supplies for Your Business</title>
+    <meta name="description" content="Shop high-quality corrugated boxes, courier bags, bubble wrap, tapes, and custom printed packaging at wholesale prices. Pan-India shipping available.">
+    <meta property="og:title" content="PackRight – Premium Packaging Supplies">
+    <meta property="og:description" content="Wholesale packaging solutions for e-commerce and retail. Boxes, mailers, tapes and more.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===========================
+         STICKY HEADER
+    =========================== -->
+    <header class="site-header" id="siteHeader">
+        <div class="header-top">
+            <div class="container header-top-inner">
+
+                <!-- Logo -->
+                <a href="#" class="logo" aria-label="PackRight Home">
+                    <svg class="logo-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <rect width="36" height="36" rx="8" fill="#1A365D"/>
+                        <path d="M8 12h20M8 18h20M8 24h12" stroke="#FF6B00" stroke-width="2.5" stroke-linecap="round"/>
+                        <path d="M26 22l3 3-3 3" stroke="#FF6B00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span class="logo-text">Pack<span class="logo-accent">Right</span></span>
+                </a>
+
+                <!-- Search Bar -->
+                <div class="search-wrapper">
+                    <div class="search-bar" id="searchBar">
+                        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+                        </svg>
+                        <input type="search" id="searchInput" placeholder="Search for boxes, courier bags, tapes..." aria-label="Search products" autocomplete="off">
+                        <button class="search-btn" id="searchBtn" aria-label="Submit search">Search</button>
+                    </div>
+                    <div class="search-suggestions" id="searchSuggestions" aria-live="polite"></div>
+                </div>
+
+                <!-- Header Actions -->
+                <div class="header-actions">
+                    <a href="#" class="header-link track-order">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="15" height="14" rx="2"/><path d="M17 11l4-4v10l-4-4"/><path d="M6 11h6M6 15h4"/></svg>
+                        <span>Track Order</span>
+                    </a>
+                    <a href="#" class="header-icon" id="accountBtn" aria-label="My Account">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                        <span>Account</span>
+                    </a>
+                    <a href="#" class="header-icon cart-icon" id="cartBtn" aria-label="View cart, 3 items">
+                        <div class="cart-icon-wrapper">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                            <span class="cart-badge" id="cartBadge">3</span>
+                        </div>
+                        <span>Cart</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sub-header Nav -->
+        <nav class="sub-nav" aria-label="Product categories">
+            <div class="container sub-nav-inner">
+                <button class="sub-nav-toggle" id="subNavToggle" aria-expanded="false" aria-label="Toggle category menu">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+                    All Categories
+                </button>
+                <ul class="sub-nav-list" id="subNavList" role="list">
+                    <li><a href="#" class="sub-nav-link active">Corrugated Boxes</a></li>
+                    <li><a href="#" class="sub-nav-link">Courier Bags</a></li>
+                    <li><a href="#" class="sub-nav-link">Protective Packaging</a></li>
+                    <li><a href="#" class="sub-nav-link">Tapes & Adhesives</a></li>
+                    <li><a href="#" class="sub-nav-link">Bubble Wrap</a></li>
+                    <li><a href="#" class="sub-nav-link">Paper Packaging</a></li>
+                    <li><a href="#" class="sub-nav-link new-badge">Custom Printed</a></li>
+                    <li><a href="#" class="sub-nav-link">Wholesale Deals</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ===========================
+         HERO SECTION
+    =========================== -->
+    <section class="hero" id="heroSection" aria-label="Hero – Premium Packaging Solutions">
+        <div class="container hero-inner">
+            <div class="hero-content" data-gsap="hero-left">
+                <span class="hero-eyebrow">Trusted by 10,000+ Businesses</span>
+                <h1 class="hero-headline">Premium Packaging<br><span class="hero-headline-accent">Solutions</span> for Your Business.</h1>
+                <p class="hero-sub">High-quality corrugated boxes, mailers, and shipping supplies at wholesale prices. Scale your packaging with confidence.</p>
+                <div class="hero-ctas">
+                    <a href="#categories" class="btn btn-primary btn-lg" id="shopAllBtn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-4 0v2"/></svg>
+                        Shop All Categories
+                    </a>
+                    <a href="#" class="btn btn-outline btn-lg" id="quoteBtn">
+                        Request Custom Quote
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="9,18 15,12 9,6"/></svg>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <span class="stat-num">50K+</span><span class="stat-label">Products Shipped</span>
+                    </div>
+                    <div class="hero-stat-divider"></div>
+                    <div class="hero-stat">
+                        <span class="stat-num">10K+</span><span class="stat-label">Happy Businesses</span>
+                    </div>
+                    <div class="hero-stat-divider"></div>
+                    <div class="hero-stat">
+                        <span class="stat-num">4.9★</span><span class="stat-label">Avg. Rating</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image-wrapper" data-gsap="hero-right">
+                <div class="hero-image-bg-blob"></div>
+                <img
+                    src="images/hero_packaging_1773594351397.png"
+                    alt="Assorted premium packaging supplies including corrugated boxes and courier bags"
+                    class="hero-img"
+                    width="620"
+                    height="520"
+                    loading="eager"
+                >
+                <div class="hero-badge hero-badge-1">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/></svg>
+                    <span>100% Recyclable</span>
+                </div>
+                <div class="hero-badge hero-badge-2">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#FF6B00" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                    <span>Same-Day Dispatch</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator" aria-hidden="true">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- ===========================
+         TRUST & BENEFITS BAR
+    =========================== -->
+    <section class="trust-bar" aria-label="Key benefits">
+        <div class="container">
+            <ul class="trust-list" role="list">
+                <li class="trust-item" data-gsap="trust">
+                    <span class="trust-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h12"/><circle cx="19" cy="18" r="3"/><path d="M17 16l1 1 2-2"/></svg>
+                    </span>
+                    <div>
+                        <strong>Pan-India Shipping</strong>
+                        <span>Delivered to 20,000+ pin codes</span>
+                    </div>
+                </li>
+                <li class="trust-divider" aria-hidden="true"></li>
+                <li class="trust-item" data-gsap="trust">
+                    <span class="trust-icon trust-icon-green" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </span>
+                    <div>
+                        <strong>100% Recyclable</strong>
+                        <span>Eco-friendly & sustainable materials</span>
+                    </div>
+                </li>
+                <li class="trust-divider" aria-hidden="true"></li>
+                <li class="trust-item" data-gsap="trust">
+                    <span class="trust-icon trust-icon-orange" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </span>
+                    <div>
+                        <strong>Bulk Discounts</strong>
+                        <span>Save up to 40% on large orders</span>
+                    </div>
+                </li>
+                <li class="trust-divider" aria-hidden="true"></li>
+                <li class="trust-item" data-gsap="trust">
+                    <span class="trust-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+                    </span>
+                    <div>
+                        <strong>Secure Payments</strong>
+                        <span>GPay, UPI, Cards & Net Banking</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ===========================
+         SHOP BY CATEGORY GRID
+    =========================== -->
+    <section class="categories-section" id="categories" aria-label="Shop by category">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-gsap="section-title">Shop by <span class="text-accent">Category</span></h2>
+                <p class="section-subtitle" data-gsap="section-subtitle">Everything your business needs—from sturdy shipping boxes to custom-branded packaging.</p>
+            </div>
+            <div class="categories-grid" role="list">
+
+                <a href="#" class="category-card" role="listitem" data-gsap="card">
+                    <div class="category-card-image">
+                        <img src="images/cat_corrugated_box_1773594369640.png" alt="Corrugated Boxes" loading="lazy" width="220" height="160">
+                    </div>
+                    <div class="category-card-body">
+                        <h3>Corrugated Boxes</h3>
+                        <span class="category-card-count">240+ products</span>
+                    </div>
+                    <div class="category-card-arrow" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </div>
+                </a>
+
+                <a href="#" class="category-card" role="listitem" data-gsap="card">
+                    <div class="category-card-image">
+                        <img src="images/cat_mailer_bag_1773594412732.png" alt="Courier Bags" loading="lazy" width="220" height="160">
+                    </div>
+                    <div class="category-card-body">
+                        <h3>Courier Bags</h3>
+                        <span class="category-card-count">180+ products</span>
+                    </div>
+                    <div class="category-card-arrow" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </div>
+                </a>
+
+                <a href="#" class="category-card" role="listitem" data-gsap="card">
+                    <div class="category-card-image">
+                        <img src="images/cat_bubble_wrap_1773594396064.png" alt="Protective Packaging" loading="lazy" width="220" height="160">
+                    </div>
+                    <div class="category-card-body">
+                        <h3>Protective Packaging</h3>
+                        <span class="category-card-count">90+ products</span>
+                    </div>
+                    <div class="category-card-arrow" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </div>
+                </a>
+
+                <a href="#" class="category-card" role="listitem" data-gsap="card">
+                    <div class="category-card-image">
+                        <img src="images/cat_packing_tape_1773594434280.png" alt="Tapes & Adhesives" loading="lazy" width="220" height="160">
+                    </div>
+                    <div class="category-card-body">
+                        <h3>Tapes & Adhesives</h3>
+                        <span class="category-card-count">60+ products</span>
+                    </div>
+                    <div class="category-card-arrow" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </div>
+                </a>
+
+                <a href="#" class="category-card" role="listitem" data-gsap="card">
+                    <div class="category-card-image">
+                        <cat-placeholder class="paper-placeholder"></cat-placeholder>
+                        <div class="cat-icon-placeholder">
+                            <svg viewBox="0 0 64 64" fill="none" stroke="#1A365D" stroke-width="1.5" aria-hidden="true"><path d="M12 8h40v48H12z"/><path d="M20 8V4h24v4"/><path d="M20 20h24M20 28h24M20 36h16"/></svg>
+                        </div>
+                    </div>
+                    <div class="category-card-body">
+                        <h3>Paper Packaging</h3>
+                        <span class="category-card-count">75+ products</span>
+                    </div>
+                    <div class="category-card-arrow" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </div>
+                </a>
+
+                <a href="#" class="category-card category-card-featured" role="listitem" data-gsap="card">
+                    <div class="category-card-image">
+                        <img src="images/cat_custom_printed_1773594449635.png" alt="Custom Printed Packaging" loading="lazy" width="220" height="160">
+                    </div>
+                    <div class="category-card-body">
+                        <h3>Custom Printed</h3>
+                        <span class="category-card-count">Brand your packaging</span>
+                    </div>
+                    <div class="category-card-arrow" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </div>
+                    <span class="category-card-pill">Design Studio</span>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===========================
+         FEATURED PRODUCTS
+    =========================== -->
+    <section class="products-section" id="products" aria-label="Best sellers">
+        <div class="container">
+            <div class="section-header products-section-header">
+                <div>
+                    <h2 class="section-title" data-gsap="section-title">Best <span class="text-accent">Sellers</span></h2>
+                    <p class="section-subtitle" data-gsap="section-subtitle">Top-rated products chosen by thousands of businesses every day.</p>
+                </div>
+                <a href="#" class="btn btn-outline-sm view-all-btn">View All Products
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="9,18 15,12 9,6"/></svg>
+                </a>
+            </div>
+
+            <div class="products-grid" id="productsGrid" role="list">
+
+                <!-- Product Card 1 -->
+                <article class="product-card" role="listitem" data-gsap="product-card">
+                    <div class="product-card-image-wrap">
+                        <span class="product-tag tag-bestseller">Bestseller</span>
+                        <img src="images/prod_3ply_box_1773594478414.png" alt="3-Ply Corrugated Shipping Box" loading="lazy" width="300" height="240">
+                        <button class="product-wishlist" aria-label="Add to wishlist">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                        </button>
+                    </div>
+                    <div class="product-card-body">
+                        <div class="product-meta">
+                            <span class="product-category">Corrugated Boxes</span>
+                            <div class="product-rating" aria-label="4.8 out of 5 stars">
+                                <span class="stars">★★★★★</span><span class="rating-count">(284)</span>
+                            </div>
+                        </div>
+                        <h3 class="product-title">3-Ply Corrugated Shipping Box</h3>
+                        <p class="product-size">Dimensions: 30×20×15 cm | Wt cap: 10kg</p>
+                        <div class="product-pricing">
+                            <span class="product-price">₹8.50</span>
+                            <span class="product-pack">per unit</span>
+                            <span class="product-old-price">₹11.00</span>
+                        </div>
+                        <div class="product-variants">
+                            <span class="variant-chip active">Pack of 50</span>
+                            <span class="variant-chip">Pack of 100</span>
+                            <span class="variant-chip">Pack of 500</span>
+                        </div>
+                        <button class="btn btn-primary product-cart-btn" data-product="3-Ply Corrugated Shipping Box" aria-label="Add 3-Ply Corrugated Shipping Box to cart">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                            Add to Cart
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Product Card 2 -->
+                <article class="product-card" role="listitem" data-gsap="product-card">
+                    <div class="product-card-image-wrap">
+                        <span class="product-tag tag-bulk">Bulk Discount</span>
+                        <img src="images/prod_bubble_mailer_1773594503450.png" alt="Kraft Bubble Mailer Envelopes" loading="lazy" width="300" height="240">
+                        <button class="product-wishlist" aria-label="Add to wishlist">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                        </button>
+                    </div>
+                    <div class="product-card-body">
+                        <div class="product-meta">
+                            <span class="product-category">Courier Bags</span>
+                            <div class="product-rating" aria-label="4.7 out of 5 stars">
+                                <span class="stars">★★★★★</span><span class="rating-count">(192)</span>
+                            </div>
+                        </div>
+                        <h3 class="product-title">Kraft Bubble Mailer Envelopes</h3>
+                        <p class="product-size">Size: A4 (24×32 cm) | Padded inside</p>
+                        <div class="product-pricing">
+                            <span class="product-price">₹6.20</span>
+                            <span class="product-pack">per unit</span>
+                            <span class="product-old-price">₹9.00</span>
+                        </div>
+                        <div class="product-variants">
+                            <span class="variant-chip active">Pack of 50</span>
+                            <span class="variant-chip">Pack of 200</span>
+                        </div>
+                        <button class="btn btn-primary product-cart-btn" data-product="Kraft Bubble Mailer Envelopes" aria-label="Add Kraft Bubble Mailer Envelopes to cart">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                            Add to Cart
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Product Card 3 -->
+                <article class="product-card" role="listitem" data-gsap="product-card">
+                    <div class="product-card-image-wrap">
+                        <span class="product-tag tag-new">New Arrival</span>
+                        <img src="images/prod_bopp_tape_1773594519279.png" alt="Transparent BOPP Packing Tape" loading="lazy" width="300" height="240">
+                        <button class="product-wishlist" aria-label="Add to wishlist">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                        </button>
+                    </div>
+                    <div class="product-card-body">
+                        <div class="product-meta">
+                            <span class="product-category">Tapes & Adhesives</span>
+                            <div class="product-rating" aria-label="4.9 out of 5 stars">
+                                <span class="stars">★★★★★</span><span class="rating-count">(517)</span>
+                            </div>
+                        </div>
+                        <h3 class="product-title">Transparent BOPP Packing Tape</h3>
+                        <p class="product-size">48mm × 65m | Strong adhesion</p>
+                        <div class="product-pricing">
+                            <span class="product-price">₹45.00</span>
+                            <span class="product-pack">per roll</span>
+                            <span class="product-old-price">₹60.00</span>
+                        </div>
+                        <div class="product-variants">
+                            <span class="variant-chip active">Pack of 12</span>
+                            <span class="variant-chip">Pack of 36</span>
+                            <span class="variant-chip">Pack of 72</span>
+                        </div>
+                        <button class="btn btn-primary product-cart-btn" data-product="Transparent BOPP Packing Tape" aria-label="Add Transparent BOPP Packing Tape to cart">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                            Add to Cart
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Product Card 4 -->
+                <article class="product-card" role="listitem" data-gsap="product-card">
+                    <div class="product-card-image-wrap">
+                        <span class="product-tag tag-bestseller">Bestseller</span>
+                        <img src="images/prod_fragile_wrap_1773594537895.png" alt="Bubble Wrap Roll Protective Packaging" loading="lazy" width="300" height="240">
+                        <button class="product-wishlist" aria-label="Add to wishlist">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                        </button>
+                    </div>
+                    <div class="product-card-body">
+                        <div class="product-meta">
+                            <span class="product-category">Protective Packaging</span>
+                            <div class="product-rating" aria-label="4.8 out of 5 stars">
+                                <span class="stars">★★★★★</span><span class="rating-count">(341)</span>
+                            </div>
+                        </div>
+                        <h3 class="product-title">Bubble Wrap Roll Protective Packaging</h3>
+                        <p class="product-size">100cm Width × 50m Length | 10mm bubbles</p>
+                        <div class="product-pricing">
+                            <span class="product-price">₹380.00</span>
+                            <span class="product-pack">per roll</span>
+                            <span class="product-old-price">₹520.00</span>
+                        </div>
+                        <div class="product-variants">
+                            <span class="variant-chip active">1 Roll</span>
+                            <span class="variant-chip">3 Rolls</span>
+                            <span class="variant-chip">10 Rolls</span>
+                        </div>
+                        <button class="btn btn-primary product-cart-btn" data-product="Bubble Wrap Roll Protective Packaging" aria-label="Add Bubble Wrap Roll to cart">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                            Add to Cart
+                        </button>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===========================
+         CTA BANNER
+    =========================== -->
+    <section class="cta-banner" aria-label="Custom packaging callout">
+        <div class="container cta-banner-inner">
+            <div class="cta-banner-content" data-gsap="cta-banner">
+                <h2>Need <span>Custom-Printed</span> Packaging?</h2>
+                <p>Create branded boxes, mailers, and tapes with your logo. Minimum order: 500 units. Get a free design proof!</p>
+                <div class="cta-banner-actions">
+                    <a href="#" class="btn btn-white btn-lg">Start Designing</a>
+                    <a href="#" class="btn btn-outline-white">Talk to an Expert</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===========================
+         SOCIAL PROOF / REVIEWS
+    =========================== -->
+    <section class="reviews-section" aria-label="Customer reviews">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-gsap="section-title">Loved by <span class="text-accent">Businesses</span></h2>
+                <p class="section-subtitle" data-gsap="section-subtitle">Join over 10,000 businesses that trust PackRight for their packaging needs.</p>
+            </div>
+            <div class="reviews-grid">
+                <div class="review-card" data-gsap="review-card">
+                    <div class="review-stars" aria-label="5 star review">★★★★★</div>
+                    <p class="review-text">"PackRight has been a game-changer for our D2C brand. The quality of their 3-ply boxes is unmatched, and bulk pricing gave us 35% savings on packaging costs."</p>
+                    <div class="review-author">
+                        <div class="review-avatar" aria-hidden="true">AK</div>
+                        <div>
+                            <strong>Ankit Kumar</strong>
+                            <span>Founder, StyleCraft India</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card" data-gsap="review-card">
+                    <div class="review-stars" aria-label="5 star review">★★★★★</div>
+                    <p class="review-text">"Their courier bags are excellent quality. Zero complaints from customers about packaging damage. Delivery is always on time and customer support is great."</p>
+                    <div class="review-author">
+                        <div class="review-avatar review-avatar-2" aria-hidden="true">PS</div>
+                        <div>
+                            <strong>Priya Sharma</strong>
+                            <span>Operations Head, QuickMart</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card" data-gsap="review-card">
+                    <div class="review-stars" aria-label="5 star review">★★★★★</div>
+                    <p class="review-text">"Ordered custom-printed boxes for our Diwali launch. The print quality was exceptional and they delivered 2 days ahead of schedule. Will definitely reorder!"</p>
+                    <div class="review-author">
+                        <div class="review-avatar review-avatar-3" aria-hidden="true">RV</div>
+                        <div>
+                            <strong>Rohan Verma</strong>
+                            <span>CEO, NutriBliss Foods</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===========================
+         FOOTER
+    =========================== -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+
+                <!-- Column 1: Company Info -->
+                <div class="footer-col footer-col-brand">
+                    <a href="#" class="logo footer-logo" aria-label="PackRight Home">
+                        <svg class="logo-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <rect width="36" height="36" rx="8" fill="#1A365D"/>
+                            <path d="M8 12h20M8 18h20M8 24h12" stroke="#FF6B00" stroke-width="2.5" stroke-linecap="round"/>
+                            <path d="M26 22l3 3-3 3" stroke="#FF6B00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="logo-text">Pack<span class="logo-accent">Right</span></span>
+                    </a>
+                    <p class="footer-brand-desc">India's most trusted source for premium packaging supplies. Quality, affordability, and speed—all in one place.</p>
+                    <div class="footer-socials">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.95C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.5C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95 29 29 0 0 0 .46-5.58 29 29 0 0 0-.46-5.59z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg>
+                        </a>
+                    </div>
+                    <div class="footer-contact-info">
+                        <a href="tel:+911800123456">📞 1800-123-456 (Toll Free)</a>
+                        <a href="mailto:support@packright.in">✉ support@packright.in</a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div class="footer-col">
+                    <h3 class="footer-col-title">Quick Links</h3>
+                    <ul class="footer-links" role="list">
+                        <li><a href="#">About PackRight</a></li>
+                        <li><a href="#">Blog & Packaging Tips</a></li>
+                        <li><a href="#">Bulk Order</a></li>
+                        <li><a href="#">Custom Printing</a></li>
+                        <li><a href="#">Become a Reseller</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Customer Service -->
+                <div class="footer-col">
+                    <h3 class="footer-col-title">Customer Service</h3>
+                    <ul class="footer-links" role="list">
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Track Your Order</a></li>
+                        <li><a href="#">Returns & Refunds</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Newsletter -->
+                <div class="footer-col footer-col-newsletter">
+                    <h3 class="footer-col-title">Stay in the Loop</h3>
+                    <p class="footer-newsletter-desc">Get packaging tips, industry news, and exclusive discounts delivered to your inbox.</p>
+                    <form class="newsletter-form" id="newsletterForm" novalidate>
+                        <div class="newsletter-input-group">
+                            <input type="email" id="newsletterEmail" name="email" placeholder="Your email address" aria-label="Email address for newsletter" required>
+                            <button type="submit" class="btn btn-primary" aria-label="Subscribe to newsletter">Subscribe</button>
+                        </div>
+                        <p class="newsletter-note">No spam, unsubscribe anytime.</p>
+                        <div class="newsletter-success" id="newsletterSuccess" aria-live="polite" hidden>
+                            ✓ Thanks for subscribing!
+                        </div>
+                    </form>
+                    <div class="footer-badges">
+                        <div class="footer-badge">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+                            Secure Payments
+                        </div>
+                        <div class="footer-badge">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                            SSL Secured
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Footer Bottom Bar -->
+            <div class="footer-bottom">
+                <p>© 2026 PackRight Supplies Pvt. Ltd. All rights reserved.</p>
+                <div class="footer-payment-icons" aria-label="Accepted payment methods">
+                    <span class="payment-icon">UPI</span>
+                    <span class="payment-icon">GPay</span>
+                    <span class="payment-icon">Paytm</span>
+                    <span class="payment-icon">VISA</span>
+                    <span class="payment-icon">MC</span>
+                    <span class="payment-icon">PhonePe</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Toast Notification -->
+    <div class="cart-toast" id="cartToast" role="alert" aria-live="polite" hidden>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/></svg>
+        <span id="cartToastMsg">Item added to cart!</span>
+    </div>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top" hidden>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18,15 12,9 6,15"/></svg>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+    <script src="main.js" defer></script>
+</body>
+</html>
