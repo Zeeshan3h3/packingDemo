@@ -23,38 +23,49 @@ window.addEventListener('load', () => {
     const heroRight = document.querySelector('[data-gsap="hero-right"]');
     if (heroLeft) {
         const children = heroLeft.children;
-        gsap.set(children, { opacity: 0, y: 30 });
-        gsap.to(children, {
-            opacity: 1,
-            y: 0,
-            duration: 0.8,
-            stagger: 0.1,
-            ease: easeOut,
-            delay: 0.2,
-        });
+        gsap.fromTo(children,
+            { opacity: 0, y: 30 },
+            {
+                opacity: 1,
+                y: 0,
+                duration: 0.8,
+                stagger: 0.1,
+                ease: easeOut,
+                delay: 0.2,
+                overwrite: 'auto'
+            }
+        );
     }
     if (heroRight) {
-        gsap.from(heroRight, {
-            opacity: 0,
-            x: 50,
-            scale: 0.95,
-            duration: 1,
-            ease: easeOut,
-            delay: 0.4,
-        });
+        gsap.fromTo(heroRight,
+            { opacity: 0, x: 50, scale: 0.95 },
+            {
+                opacity: 1,
+                x: 0,
+                scale: 1,
+                duration: 1,
+                ease: easeOut,
+                delay: 0.4,
+                overwrite: 'auto'
+            }
+        );
     }
 
     // --- Trust bar items ---
     ScrollTrigger.batch('[data-gsap="trust"]', {
         start: 'top 90%',
         onEnter: (batch) =>
-            gsap.from(batch, {
-                opacity: 0,
-                y: 20,
-                stagger: 0.1,
-                duration: 0.6,
-                ease: easeOut,
-            }),
+            gsap.fromTo(batch,
+                { opacity: 0, y: 20 },
+                {
+                    opacity: 1,
+                    y: 0,
+                    stagger: 0.1,
+                    duration: 0.6,
+                    ease: easeOut,
+                    overwrite: 'auto'
+                }
+            ),
         once: true,
     });
 
@@ -62,13 +73,17 @@ window.addEventListener('load', () => {
     ScrollTrigger.batch('[data-gsap="section-title"], [data-gsap="section-subtitle"]', {
         start: 'top 88%',
         onEnter: (batch) =>
-            gsap.from(batch, {
-                opacity: 0,
-                y: 24,
-                stagger: 0.08,
-                duration: 0.65,
-                ease: easeOut,
-            }),
+            gsap.fromTo(batch,
+                { opacity: 0, y: 24 },
+                {
+                    opacity: 1,
+                    y: 0,
+                    stagger: 0.08,
+                    duration: 0.65,
+                    ease: easeOut,
+                    overwrite: 'auto'
+                }
+            ),
         once: true,
     });
 
@@ -76,14 +91,18 @@ window.addEventListener('load', () => {
     ScrollTrigger.batch('[data-gsap="card"]', {
         start: 'top 88%',
         onEnter: (batch) =>
-            gsap.from(batch, {
-                opacity: 0,
-                y: 40,
-                scale: 0.96,
-                stagger: 0.07,
-                duration: 0.7,
-                ease: easeOut,
-            }),
+            gsap.fromTo(batch,
+                { opacity: 0, y: 40, scale: 0.96 },
+                {
+                    opacity: 1,
+                    y: 0,
+                    scale: 1,
+                    stagger: 0.07,
+                    duration: 0.7,
+                    ease: easeOut,
+                    overwrite: 'auto'
+                }
+            ),
         once: true,
     });
 
@@ -91,13 +110,17 @@ window.addEventListener('load', () => {
     ScrollTrigger.batch('[data-gsap="product-card"]', {
         start: 'top 88%',
         onEnter: (batch) =>
-            gsap.from(batch, {
-                opacity: 0,
-                y: 50,
-                stagger: 0.1,
-                duration: 0.75,
-                ease: easeOut,
-            }),
+            gsap.fromTo(batch,
+                { opacity: 0, y: 50 },
+                {
+                    opacity: 1,
+                    y: 0,
+                    stagger: 0.1,
+                    duration: 0.75,
+                    ease: easeOut,
+                    overwrite: 'auto'
+                }
+            ),
         once: true,
     });
 
@@ -109,13 +132,17 @@ window.addEventListener('load', () => {
             start: 'top 85%',
             once: true,
             onEnter: () => {
-                gsap.from(ctaBanner.children, {
-                    opacity: 0,
-                    y: 30,
-                    stagger: 0.12,
-                    duration: 0.8,
-                    ease: easeOut,
-                });
+                gsap.fromTo(ctaBanner.children,
+                    { opacity: 0, y: 30 },
+                    {
+                        opacity: 1,
+                        y: 0,
+                        stagger: 0.12,
+                        duration: 0.8,
+                        ease: easeOut,
+                        overwrite: 'auto'
+                    }
+                );
             },
         });
     }
@@ -124,15 +151,24 @@ window.addEventListener('load', () => {
     ScrollTrigger.batch('[data-gsap="review-card"]', {
         start: 'top 88%',
         onEnter: (batch) =>
-            gsap.from(batch, {
-                opacity: 0,
-                y: 40,
-                stagger: 0.1,
-                duration: 0.7,
-                ease: easeOut,
-            }),
+            gsap.fromTo(batch,
+                { opacity: 0, y: 40 },
+                {
+                    opacity: 1,
+                    y: 0,
+                    stagger: 0.1,
+                    duration: 0.7,
+                    ease: easeOut,
+                    overwrite: 'auto'
+                }
+            ),
         once: true,
     });
+
+    // Refresh ScrollTrigger to ensure all positions are correct
+    setTimeout(() => {
+        ScrollTrigger.refresh();
+    }, 500);
 });
 
 /* ============================================================
